@@ -47,12 +47,12 @@ void mostraTauler(){
         printf("\n\t+-----+-----+-----+\n\n");
     }
 }
-void introduirPosicio(){///////////arreglar el malait while!!! ara es pot posar una X sobre un 0!!!!!!
+void introduirPosicio(){
     do{
         printf("\tJugador %d, introdueix la posicio (1-9)\n\t",jugador);
         scanf("%d",&casella);
         coordenades();
-    }while((casella<1&&casella>9)&&(tauler[x][y]!=0));
+    }while((casella<1&&casella>9)||(tauler[x][y]!=0));
     tirades++;
 }
 ///////////////////////////////////////ATENCIOOOOOOO///////////////////////////////////////////////////////////

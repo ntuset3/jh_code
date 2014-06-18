@@ -47,7 +47,7 @@ void mostraTauler(){
         printf("\n\t+-----+-----+-----+\n\n");
     }
 }
-void introduirPosicio(){
+void introduirPosicio(){///////////arreglar el malait while!!! ara es pot posar una X sobre un 0!!!!!!
     do{
         printf("\tJugador %d, introdueix la posicio (1-9)\n\t",jugador);
         scanf("%d",&casella);

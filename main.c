@@ -1,42 +1,42 @@
 #include<stdio.h>
-void coordenades();
+
 void inicialitzaTauler();
 void mostraTauler();
-void introduirPosicio();
-void colocarFitxes();
-void comprovarGuanyador();
-void canviJugador();
-void moureFitxes();
+void introPosicio();
+void comprovaGuanyador();
+void moureFitxa();
 
-int tauler[3][3],casella,x,y,jugador=2,guanyador=0,tirades=1;
+int tauler[3][3],tirades=1,guanyador=0;
 
-int main (void){
-
+int main(void){
+    int jugador=2
     inicialitzaTauler();
-    tauler[1][1]=1;
     mostraTauler();
-
-    printf("\tComenca el jugador 1 a la casella central\n\n");
+    tabler[1][1]=2;
     do{
-        introduirPosicio();
-        colocarFitxes();
+        introPosicio1();
+        if(jugador==1){
+            matriu[posx][posy]=2;
+        }
+        else{
+            matriu[posx][posy]=1;
+        }
+        tirades++;
         mostraTauler();
-        comprovarGuanyador();
-        canviJugador();
-    }while(tirades<6&&guanyador==0);
-
+        comprovaGuanyador();
+    }
+    while(tirades<6||guanyador==0);
     while(guanyador==0){
-        moureFitxes();
-        colocarFitxes();
-        comprovarGuanyador();
-        canviJugador();
+        introPosicio2();
+        moureFitxa();
+        mostraTauler();
+        comprovaGuanyador();
     }
     if(jugador==1){
-        printf("\tJugador 1, HAS GUANYAT!!!\n\n");
+        printf("Ha guanyat el Jugador 1");
     }
     else{
-        printf("\tJugador 2, HAS GUANYAT!!!\n\n");
+        printf("Ha guanyat el Jugador 2");
     }
     return 0;
 }
-

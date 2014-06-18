@@ -1,35 +1,34 @@
 #include<stdio.h>
 
 void inicialitzaTauler();
-void mostraTauler();
+void mostrar();
 void introPosicio();
 void comprovaGuanyador();
 void moureFitxa();
 
-int tauler[3][3],tirades=1,guanyador=0;
+int tauler[3][3];
+int jugador=2,tirades=1,guanyador=0;
 
 int main(void){
-    int jugador=2
+
     inicialitzaTauler();
-    mostraTauler();
+    mostrar();
     tabler[1][1]=2;
     do{
-        introPosicio1();
+        introPosicio();
         if(jugador==1){
             matriu[posx][posy]=2;
         }
         else{
             matriu[posx][posy]=1;
         }
-        tirades++;
-        mostraTauler();
+        mostrar();
         comprovaGuanyador();
     }
     while(tirades<6||guanyador==0);
     while(guanyador==0){
-        introPosicio2();
+        introPosicio();
         moureFitxa();
-        mostraTauler();
         comprovaGuanyador();
     }
     if(jugador==1){

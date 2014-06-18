@@ -1,3 +1,5 @@
+/* He penjat les funcions a 'Dani_G.c' s'ha de corretgir la de moure les X i 0s*/
+
 #include<stdio.h>
 void coordenades();
 void inicialitzaTauler();

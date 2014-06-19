@@ -20,7 +20,11 @@ void inicialitzaTauler(){
     }
 }
 void mostraTauler(){
-    system("cls");/* system("clear");//per a Linux */
+    #if WIN32
+        system("cls");   /* per a Windows */
+    #elif LINUX
+        system("clear"); /* per a Linux */
+    #endif
     int i,j,cont=1;
 
     printf("\tTRES EN RATLLA\n");

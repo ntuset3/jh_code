@@ -21,9 +21,9 @@ void inicialitzaTauler(){
 }
 void mostraTauler(){
     #if WIN32
-        system("cls");   /* per a Windows */
+        system("cls");   /* netejar pantalla per a Windows */
     #elif LINUX
-        system("clear"); /* per a Linux */
+        system("clear"); /* netejar pantalla per a Linux */
     #endif
     int i,j,cont=1;
 
